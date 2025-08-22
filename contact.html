@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты — ROCK'N DRILL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="img/logo2.png" alt="Rock'n Drill Logo" class="h-12 w-auto" />
+      <span class="text-2xl font-bold">ROCK'N DRILL</span>
+    </a>
+    <nav class="flex gap-6 text-lg">
+      <a href="about.html" class="nav-link">О нас</a>
+      <a href="services.html" class="nav-link">Услуги</a>
+      <a href="pricing.html" class="nav-link">Цены</a>
+      <a href="contact.html" class="nav-link">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="section bg-gray-800 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="section-title">Свяжитесь с нами</h1>
+      <form class="grid grid-cols-1 gap-6">
+        <input type="text" placeholder="Ваше имя" class="form-input" required>
+        <input type="tel" placeholder="Телефон" class="form-input" required>
+        <textarea placeholder="Опишите задачу" rows="5" class="form-input"></textarea>
+        <button class="btn-primary">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> ROCK'N DRILL. Все права защищены.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

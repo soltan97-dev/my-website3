@@ -1,0 +1,203 @@
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: rgba(17, 17, 17, 0.95);
+  color: #ddd;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* Навбар */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #111827;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-link {
+  color: #d1d5db;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+/* Hero секция с параллаксом */
+.hero.parallax {
+  /* background: url('https://images.unsplash.com/photo-1581091215367-59ab4b3c52db') no-repeat center center / cover; */
+
+   background-image: url('img/metal-bg.jpg');
+  background-attachment: fixed;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Чтобы затемнить фон и обеспечить читаемость текста */
+.hero.parallax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Контент поверх затемнения */
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Заголовки */
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #e5e7eb;
+}
+
+.btn-primary {
+  background: #ef4444;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #dc2626;
+}
+
+.section {
+  padding: 5rem 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+
+.service-card {
+  background: #374151;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  color: white;
+  font-weight: 500;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background: #4b5563;
+}
+
+/* Форма */
+.form-input {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+/* Footer */
+.footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+/* Анимации */
+/* .fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+} */
+
+/* Анимации */
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-bounce-slow {
+  animation: bounce 4s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}

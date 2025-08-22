@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Услуги — ROCK'N DRILL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <header class="header">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="img/logo2.png" alt="Rock'n Drill Logo" class="h-12 w-auto" />
+      <span class="text-2xl font-bold">ROCK'N DRILL</span>
+    </a>
+    <nav class="flex gap-6 text-lg">
+      <a href="about.html" class="nav-link">О нас</a>
+      <a href="services.html" class="nav-link">Услуги</a>
+      <a href="pricing.html" class="nav-link">Цены</a>
+      <a href="contact.html" class="nav-link">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Список услуг -->
+  <section class="section bg-gray-800">
+    <div class="max-w-7xl mx-auto text-center">
+      <h1 class="section-title">Наши услуги</h1>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <a href="service-electric.html" class="service-card">⚡ Электрика</a>
+        <a href="service-mechanic.html" class="service-card">🔩 Механика</a>
+        <a href="service-water.html" class="service-card">🚰 Сантехника</a>
+        <a href="service-concrete.html" class="service-card">🧱 Бетонные работы</a>
+        <a href="service-welding.html" class="service-card">🔥 Сварка</a>
+        <a href="service-finishing.html" class="service-card">🎨 Отделка</a>
+        <a href="service-renovation.html" class="service-card">🏠 Ремонт помещений</a>
+        <a href="service-maintenance.html" class="service-card">🛠️ Обслуживание</a>
+        <a href="service-install.html" class="service-card">📦 Монтаж оборудования</a>
+        <a href="service-wood.html" class="service-card">🪚 Деревянные работы</a>
+        <a href="service-demolition.html" class="service-card">🚧 Демонтаж</a>
+        <a href="service-assembly.html" class="service-card">🔧 Сборка конструкций</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> ROCK'N DRILL. Все права защищены.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

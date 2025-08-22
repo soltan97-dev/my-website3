@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ROCK'N DRILL — Drill. Pray. Love.</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Навбар -->
+<header class="header">
+<div class="flex items-center gap-3">
+<a href="index.html"><img src="img/logo2.png" alt="Rock'n Drill Logo" class="h-12 w-auto" /></a>
+<span class="text-2xl font-bold">ROCK'N DRILL</span>
+</div>
+<nav class="flex gap-6 text-lg">
+<a href="about.html" class="nav-link">О нас</a>
+<a href="services.html" class="nav-link">Услуги</a>
+<a href="pricing.html" class="nav-link">Цены</a>
+<a href="#contact" class="nav-link">Контакты</a>
+</nav>
+</header>
+
+
+<!-- Hero с параллаксом -->
+<section class="hero parallax" style="background:url('img/4.png') center/cover fixed">
+<div class="hero-content animate-fadeIn">
+<h1 class="title">О компании</h1>
+<p class="subtitle">Надёжные решения для дома и производства</p>
+</div>
+</section>
+
+
+<!-- Блок: кто мы -->
+<section class="section bg-gray-800">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="section-title">Кто мы</h2>
+<p class="text-lg text-gray-300 leading-relaxed">
+ROCK'N DRILL — команда инженеров и мастеров полного цикла. Выполняем электромонтаж, сантехнику, сварку,
+бетонные и отделочные работы, монтаж оборудования и обслуживание объектов. Работаем по договору, соблюдаем сроки,
+фиксируем смету до старта работ.
+</p>
+</div>
+</section>
+
+
+<!-- Блок: цифры -->
+<section class="section bg-gray-700">
+<div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+<div class="price-card"><div class="text-3xl font-extrabold">10+</div><div class="mt-1 text-gray-300">лет опыта</div></div>
+<div class="price-card"><div class="text-3xl font-extrabold">500+</div><div class="mt-1 text-gray-300">выполненных проектов</div></div>
+<div class="price-card"><div class="text-3xl font-extrabold">24/7</div><div class="mt-1 text-gray-300">оперативный выезд</div></div>
+<div class="price-card"><div class="text-3xl font-extrabold">12 мес</div><div class="mt-1 text-gray-300">гарантия на работы</div></div>
+</div>
+</section>
+
+
+<!-- Блок: подход -->
+<section class="section bg-gray-800">
+<div class="max-w-5xl mx-auto">
+<h2 class="section-title text-center">Наш подход</h2>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-xl font-semibold text-white mb-2">Честные сметы</h3>
+<p class="text-gray-300">Прозрачные цены без скрытых платежей. Утверждаем смету до начала работ.</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-xl font-semibold text-white mb-2">Безопасность</h3>
+<p class="text-gray-300">Соблюдаем нормы и стандарты, используем сертифицированные материалы.</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-xl font-semibold text-white mb-2">Сроки</h3>
+<p class="text-gray-300">Планируем этапы и сдаём объект вовремя. Работаем по графику.</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-xl font-semibold text-white mb-2">Под ключ</h3>
+<p class="text-gray-300">Берём на себя все задачи: от закупки до утилизации и финальной уборки.</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- CTA -->
+<section class="section bg-gray-700">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="section-title">Готовы обсудить проект?</h2>
+<p class="text-gray-300 mb-6">Оставьте заявку — предложим варианты и точную смету.</p>
+<div class="flex items-center justify-center gap-4">
+<a href="services.html" class="btn-primary">Смотреть услуги</a>
+<a href="index.html#contact" class="btn-primary">Оставить заявку</a>
+</div>
+</div>
+</section>
+
+
+<!-- Футер -->
+<footer class="footer">
+<p>© <span id="year"></span> ROCK'N DRILL. Все права защищены.</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
